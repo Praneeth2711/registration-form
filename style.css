@@ -1,0 +1,21 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom style for date input placeholder */
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #9ca3af; /* gray-400 */
+  margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
+/* Hide default date picker icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
